@@ -2,17 +2,26 @@ backend:
   name: github
   repo: oiagorodrigues/personal-website
 
-media_folder: 'static/images/uploads'
-public_folder: '/images/uploads'
+media_folder: static/images/uploads
+public_folder: /images/uploads
+site_url: https://iagorodrigues.netlify.com
+display_url: iagorodrigues.netlify.com
 
 collections:
-  - name: 'posts'
-    label: 'Posts'
-    folder: 'posts'
+  - name: posts
+    label: Posts
+    folder: posts
     create: true
-    slug: '{{slug}}'
+    slug: '{{year}}_{{month}}_{{day}}__{{slug}}'
+    extension: md
     fields:
       - { label: 'Title', name: 'title', widget: 'string' }
+      - { label: 'Publish Date', name: 'date', widget: 'datetime' }
+      - {
+          label: 'Featured Image',
+          name: 'thumbnail',
+          widget: 'image',
+          required: false,
+        }
       - { label: 'Excerpt', name: 'excerpt', widget: 'string' }
-      - { label: 'Publish Date', name: 'date', widget: 'date' }
       - { label: 'Body', name: 'body', widget: 'markdown' }
