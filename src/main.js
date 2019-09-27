@@ -4,6 +4,11 @@
 import { DefaultLayout } from '~/layouts';
 
 export default function(Vue, { router, head, isClient }) {
+  head.script.push({
+    src: 'https://identity.netlify.com/v1/netlify-identity-widget.js',
+    body: true
+  });
+
   // Set default layout as a global component
   Vue.component('DefaultLayout', DefaultLayout);
 }
