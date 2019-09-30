@@ -6,6 +6,7 @@ media_folder: static/images/uploads
 public_folder: /images/uploads
 site_url: https://iagorodrigues.netlify.com
 display_url: iagorodrigues.netlify.com
+publish_mode: editorial_workflow
 
 collections:
   - name: posts
