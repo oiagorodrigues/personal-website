@@ -1,0 +1,224 @@
+<!doctype html>
+<html lang="pt-BR" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#0c1014">
+  <meta name="description" content="Iago Rodrigues: liderança em engenharia de software, arquitetura de sistemas e produtos digitais. Fundador e Principal Engineer da IRTC.">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Iago Rodrigues — Lead Software Engineer">
+  <meta property="og:description" content="Da complexidade, construo clareza. Engenharia de software, arquitetura e liderança técnica.">
+  <meta property="og:image" content="https://raw.githubusercontent.com/oiagorodrigues/personal-website/master/dist/iago-portrait.jpg">
+  <title>Iago Rodrigues — Lead Software Engineer</title>
+  <link rel="icon" type="image/svg+xml" href="./favicon.svg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <script>
+    try {
+      var savedTheme = localStorage.getItem('ir-theme') || 'system';
+      var systemDark = matchMedia('(prefers-color-scheme: dark)').matches;
+      document.documentElement.dataset.theme = savedTheme === 'system' ? (systemDark ? 'dark' : 'light') : savedTheme;
+    } catch(e) {}
+  </script>
+  <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+  <svg class="svg-defs" aria-hidden="true" xmlns="http://www.w3.org/2000/svg">
+    <symbol id="ir-mark" viewBox="0 0 124 48">
+      <path d="M19 8 7 24l12 16M34 9v30M51 39V9h15c9 0 14 4 14 12s-5 12-14 12H51m15 0 12 6M98 7 88 41M105 8l12 16-12 16" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="square" stroke-linejoin="miter"/>
+      <rect x="83" y="7" width="5" height="5" fill="var(--accent)"/>
+    </symbol>
+    <symbol id="trace-icon" viewBox="0 0 28 28">
+      <path d="M3 23h8V12h11V5M17 5h5v5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+      <rect x="1" y="21" width="4" height="4" fill="currentColor"/>
+    </symbol>
+    <symbol id="download-icon" viewBox="0 0 28 28">
+      <path d="M14 3v16m-6-6 6 6 6-6M4 22v3h20v-3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="square" stroke-linejoin="miter"/>
+    </symbol>
+    <symbol id="theme-system" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="13" rx="1" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M9 21h6m-3-4v4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="square"/></symbol>
+    <symbol id="theme-light" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 2v3m0 14v3M2 12h3m14 0h3M4.9 4.9 7 7m10 10 2.1 2.1M19.1 4.9 17 7M7 17l-2.1 2.1" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></symbol>
+    <symbol id="theme-dark" viewBox="0 0 24 24"><path d="M20 15.6A8.4 8.4 0 0 1 8.4 4 8.5 8.5 0 1 0 20 15.6Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></symbol>
+  </svg>
+
+  <a class="skip-link" href="#main" data-i18n="skip">Pular para o conteúdo</a>
+  <header class="site-header" id="site-header">
+    <div class="header-inner">
+      <a class="brand" href="#inicio" aria-label="Iago Rodrigues — início" data-i18n-aria="brandAria">
+        <svg class="brand-svg" role="img" aria-hidden="true"><use href="#ir-mark"></use></svg>
+      </a>
+      <nav class="nav" aria-label="Navegação principal" data-i18n-aria="navAria">
+        <a href="#sobre" data-section="sobre" data-i18n="navAbout">Sobre</a>
+        <a href="#atuacao" data-section="atuacao" data-i18n="navWork">Atuação</a>
+        <a href="#tecnologias" data-section="tecnologias" data-i18n="navStack">Stack</a>
+        <a href="#trajetoria" data-section="trajetoria" data-i18n="navJourney">Trajetória</a>
+        <a href="#irtc" data-section="irtc" data-i18n="navCompany">IRTC</a>
+        <a href="#contato" data-section="contato" data-i18n="navContact">Contato</a>
+      </nav>
+      <div class="header-controls">
+        <label class="control-field language-field">
+          <span class="sr-only" data-i18n="languageLabel">Idioma</span>
+          <span class="language-current" id="language-current" aria-hidden="true">PT</span>
+          <select id="language-select" aria-label="Idioma" data-i18n-aria="languageLabel">
+            <option value="pt">PT</option>
+            <option value="en">EN</option>
+            <option value="es">ES</option>
+          </select>
+        </label>
+        <label class="control-field theme-field">
+          <span class="sr-only" data-i18n="themeLabel">Tema</span>
+          <svg class="theme-icon" aria-hidden="true"><use id="theme-icon-use" href="#theme-system"></use></svg>
+          <select id="theme-select" aria-label="Tema" data-i18n-aria="themeLabel">
+            <option value="system">Sistema</option>
+            <option value="light">Claro</option>
+            <option value="dark">Escuro</option>
+          </select>
+        </label>
+        <a class="resume-header" href="./Iago-Rodrigues-Resume.pdf" target="_blank" rel="noopener" data-i18n-aria="resumeAria">
+          <span data-i18n="resumeShort">Currículo</span><svg aria-hidden="true"><use href="#download-icon"></use></svg>
+        </a>
+      </div>
+    </div>
+    <div class="reading-track" aria-hidden="true"><span id="reading-progress"></span></div>
+  </header>
+
+  <main id="main">
+    <section class="hero page-width" id="inicio" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="kicker hero-kicker"><span class="kicker-square" aria-hidden="true"></span><span data-i18n="heroEyebrow">IAGO RODRIGUES / LEAD SOFTWARE ENGINEER</span></p>
+        <h1 id="hero-title"><span data-i18n="heroTitleA">Da complexidade,</span><br><em data-i18n="heroTitleB">construo clareza.</em></h1>
+        <p class="hero-lede" data-i18n="heroLede">Lidero engenharia de software do produto à arquitetura. Construo sistemas confiáveis, experiências refinadas e equipes que evoluem.</p>
+        <div class="hero-actions">
+          <a class="button button-solid" href="#atuacao"><span data-i18n="exploreWork">Explore meu trabalho</span><svg aria-hidden="true"><use href="#trace-icon"></use></svg></a>
+          <a class="button button-quiet" href="./Iago-Rodrigues-Resume.pdf" target="_blank" rel="noopener"><span data-i18n="openResume">Abrir currículo</span><svg aria-hidden="true"><use href="#download-icon"></use></svg></a>
+        </div>
+        <div class="hero-footer"><span data-i18n="heroLocation">BASEADO EM BELÉM, BRASIL</span><span>01°27′ S / 48°30′ W</span></div>
+      </div>
+      <div class="hero-diagram" aria-hidden="true">
+        <div class="diagram-top"><span data-i18n="diagramTop">SISTEMAS / 001</span><span class="diagram-pulse">● <span data-i18n="diagramStatus">EM EVOLUÇÃO</span></span></div>
+        <svg class="diagram-svg" viewBox="0 0 520 510" preserveAspectRatio="xMidYMid meet">
+          <defs><pattern id="grid" width="34" height="34" patternUnits="userSpaceOnUse"><path d="M34 0H0V34" fill="none" stroke="currentColor" stroke-opacity=".16" stroke-width="1"/></pattern></defs>
+          <rect width="520" height="510" fill="url(#grid)"/>
+          <circle cx="262" cy="252" r="180" fill="none" stroke="currentColor" stroke-opacity=".22"/>
+          <circle cx="262" cy="252" r="117" fill="none" stroke="currentColor" stroke-opacity=".3"/>
+          <circle cx="262" cy="252" r="57" fill="none" stroke="currentColor" stroke-opacity=".5"/>
+          <path d="M60 165H177L220 208M322 208l43-43h94M60 340h117l43-43m102 0 43 43h94M262 70v126m0 113v132" fill="none" stroke="currentColor" stroke-opacity=".58" stroke-width="2"/>
+          <path d="M60 165H177L220 208M322 208l43-43h94M60 340h117l43-43m102 0 43 43h94" fill="none" stroke="var(--accent)" stroke-width="2" class="diagram-path"/>
+          <circle cx="60" cy="165" r="5" fill="var(--accent)"/><circle cx="459" cy="165" r="5" fill="var(--accent)"/><circle cx="60" cy="340" r="5" fill="var(--accent)"/><circle cx="459" cy="340" r="5" fill="var(--accent)"/>
+          <circle cx="262" cy="70" r="5" fill="var(--accent)"/><circle cx="262" cy="441" r="5" fill="var(--accent)"/>
+          <rect x="230" y="220" width="64" height="64" fill="var(--surface)" stroke="var(--accent)" stroke-width="2" transform="rotate(45 262 252)"/>
+          <circle cx="262" cy="252" r="11" fill="var(--accent)"/>
+        </svg>
+        <div class="diagram-label label-a"><small>01 /</small><span data-i18n="diagramA">ARQUITETURA</span></div>
+        <div class="diagram-label label-b"><small>02 /</small><span data-i18n="diagramB">PRODUTO</span></div>
+        <div class="diagram-label label-c"><small>03 /</small><span data-i18n="diagramC">PESSOAS</span></div>
+        <div class="diagram-bottom"><span data-i18n="diagramBottom">// CONSTRUIR PARA O QUE VEM</span><span>IR / 2026</span></div>
+      </div>
+    </section>
+
+    <div class="manifesto-strip" aria-hidden="true"><div class="manifesto-track">
+      <div class="manifesto-group"><span data-i18n="stripA">DESENHAR O SISTEMA</span><span class="strip-cross">✳</span><span data-i18n="stripD">CLOUD ENGINEERING</span><span class="strip-cross">✳</span><span data-i18n="stripB">FAZER PARA PESSOAS</span><span class="strip-cross">✳</span><span data-i18n="stripE">ENGENHARIA DE IA</span><span class="strip-cross">✳</span><span data-i18n="stripC">SEGUIR EVOLUINDO</span><span class="strip-cross">✳</span><span data-i18n="stripF">ARQUITETURA DE SOFTWARE</span><span class="strip-cross">✳</span><span data-i18n="stripG">PENSAMENTO DE PRODUTO</span><span class="strip-cross">✳</span></div>
+      <div class="manifesto-group"><span data-i18n="stripA">DESENHAR O SISTEMA</span><span class="strip-cross">✳</span><span data-i18n="stripD">CLOUD ENGINEERING</span><span class="strip-cross">✳</span><span data-i18n="stripB">FAZER PARA PESSOAS</span><span class="strip-cross">✳</span><span data-i18n="stripE">ENGENHARIA DE IA</span><span class="strip-cross">✳</span><span data-i18n="stripC">SEGUIR EVOLUINDO</span><span class="strip-cross">✳</span><span data-i18n="stripF">ARQUITETURA DE SOFTWARE</span><span class="strip-cross">✳</span><span data-i18n="stripG">PENSAMENTO DE PRODUTO</span><span class="strip-cross">✳</span></div>
+    </div></div>
+
+    <section class="about page-width section-pad" id="sobre" aria-labelledby="about-title">
+      <div class="section-head" data-reveal><span class="section-number">01 / 06</span><span class="section-rule"></span><span data-i18n="sectionAbout">QUEM SOU</span></div>
+      <div class="about-grid">
+        <div class="portrait-wrap" data-reveal>
+          <div class="portrait-corner corner-top"></div><div class="portrait-corner corner-bottom"></div>
+          <img src="./iago-portrait.jpg" alt="Retrato de Iago Rodrigues" data-i18n-alt="portraitAlt" width="1408" height="1878" loading="lazy" decoding="async">
+          <div class="portrait-caption"><span>IR / 01</span><span data-i18n="portraitCaption">BELÉM, AMAZÔNIA</span></div>
+        </div>
+        <div class="about-copy" data-reveal>
+          <p class="eyebrow" data-i18n="aboutEyebrow">ENGENHEIRO, LÍDER, CONSTRUTOR.</p>
+          <h2 id="about-title"><span data-i18n="aboutTitleA">Pensamento</span><br><em data-i18n="aboutTitleB">de ponta a ponta.</em></h2>
+          <p data-i18n="aboutP1">Sou Iago Rodrigues, Lead Software Engineer com mais de oito anos criando produtos digitais e guiando decisões técnicas. Minha atuação conecta arquitetura de sistemas, front-end, back-end e liderança de equipes.</p>
+          <p data-i18n="aboutP2">Trabalho para que o software seja claro para quem usa, sustentável para quem constrói e útil para o negócio. De Belém, colaboro com times e produtos além das fronteiras.</p>
+          <div class="fact-line"><span><b>8+</b><small data-i18n="yearsLabel">ANOS EM SOFTWARE</small></span><span><b>360°</b><small data-i18n="fullStackLabel">VISÃO DE PRODUTO</small></span></div>
+          <a class="text-action" href="https://www.linkedin.com/in/iago-rodrigues/" target="_blank" rel="noopener noreferrer"><span data-i18n="linkedinJourney">Conheça minha trajetória</span><svg aria-hidden="true"><use href="#trace-icon"></use></svg></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="practice section-pad" id="atuacao" aria-labelledby="practice-title">
+      <div class="page-width">
+        <div class="section-head" data-reveal><span class="section-number">02 / 06</span><span class="section-rule"></span><span data-i18n="sectionPractice">O QUE EU FAÇO</span></div>
+        <div class="section-intro" data-reveal><div><p class="eyebrow" data-i18n="practiceEyebrow">TÉCNICA COM DIREÇÃO</p><h2 id="practice-title"><span data-i18n="practiceTitleA">Construir é escolher</span><br><em data-i18n="practiceTitleB">o que importa.</em></h2></div><p data-i18n="practiceIntro">Cada decisão técnica molda o produto, a equipe e o futuro do sistema. Minha prática combina profundidade de engenharia e contexto de negócio.</p></div>
+        <div class="practice-list">
+          <article class="practice-row" data-reveal><span class="practice-index">01</span><div class="practice-main"><h3 data-i18n="practice1Title">Arquitetura que evolui</h3><p data-i18n="practice1Text">Serviços, APIs e dados desenhados para escalar sem perder clareza, observabilidade ou capacidade de mudança.</p></div><span class="practice-tag" data-i18n="practice1Tag">SISTEMAS / BACK-END</span><span class="practice-symbol" aria-hidden="true">⌘</span></article>
+          <article class="practice-row" data-reveal><span class="practice-index">02</span><div class="practice-main"><h3 data-i18n="practice2Title">Experiências com intenção</h3><p data-i18n="practice2Text">Interfaces rápidas e acessíveis, com design systems que tornam a qualidade repetível em cada entrega.</p></div><span class="practice-tag" data-i18n="practice2Tag">FRONT-END / PRODUTO</span><span class="practice-symbol" aria-hidden="true">◇</span></article>
+          <article class="practice-row" data-reveal><span class="practice-index">03</span><div class="practice-main"><h3 data-i18n="practice3Title">IA aplicada com critério</h3><p data-i18n="practice3Text">Automação e fluxos com agentes apoiados por avaliação, limites claros e resultados verificáveis.</p></div><span class="practice-tag" data-i18n="practice3Tag">AI ENGINEERING</span><span class="practice-symbol" aria-hidden="true">✳</span></article>
+          <article class="practice-row" data-reveal><span class="practice-index">04</span><div class="practice-main"><h3 data-i18n="practice4Title">Liderança que multiplica</h3><p data-i18n="practice4Text">Direção técnica, mentoria e colaboração entre áreas para que times entreguem com confiança.</p></div><span class="practice-tag" data-i18n="practice4Tag">PESSOAS / ENTREGA</span><span class="practice-symbol" aria-hidden="true">＋</span></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="stack page-width section-pad" id="tecnologias" aria-labelledby="stack-title">
+      <div class="section-head" data-reveal><span class="section-number">03 / 06</span><span class="section-rule"></span><span data-i18n="sectionStack">TECNOLOGIAS</span></div>
+      <div class="stack-intro" data-reveal>
+        <div><p class="eyebrow" data-i18n="stackEyebrow">UM SISTEMA DE FERRAMENTAS</p><h2 id="stack-title"><span data-i18n="stackTitleA">Cada camada,</span><br><em data-i18n="stackTitleB">uma escolha consciente.</em></h2></div>
+        <p data-i18n="stackIntro">Do front-end à infraestrutura, combino tecnologias para construir sistemas claros, resilientes e úteis.</p>
+      </div>
+      <div class="stack-board" data-reveal>
+        <div class="stack-board-label" aria-hidden="true"><span>IR / ENGINEERING ATLAS</span><span>SYS.04 / 16 NODES</span></div>
+        <div class="stack-grid">
+          <div class="stack-cluster"><div class="stack-cluster-head"><span>01 /</span><h3 data-i18n="stackInterface">Interface</h3><small>CLIENT / UI</small></div><ul class="stack-nodes">
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/typescript.svg')" aria-hidden="true"></span><span>TypeScript</span></li>
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/react.svg')" aria-hidden="true"></span><span>React</span></li>
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/vuedotjs.svg')" aria-hidden="true"></span><span>Vue.js</span></li>
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/nextdotjs.svg')" aria-hidden="true"></span><span>Next.js</span></li>
+          </ul></div>
+          <div class="stack-cluster"><div class="stack-cluster-head"><span>02 /</span><h3 data-i18n="stackServices">Serviços</h3><small>API / SYSTEMS</small></div><ul class="stack-nodes">
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/nodedotjs.svg')" aria-hidden="true"></span><span>Node.js</span></li>
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/nestjs.svg')" aria-hidden="true"></span><span>NestJS</span></li>
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/python.svg')" aria-hidden="true"></span><span>Python</span></li>
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/django.svg')" aria-hidden="true"></span><span>Django</span></li>
+          </ul></div>
+          <div class="stack-cluster"><div class="stack-cluster-head"><span>03 /</span><h3 data-i18n="stackData">Dados &amp; nuvem</h3><small>DATA / CLOUD</small></div><ul class="stack-nodes">
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/postgresql.svg')" aria-hidden="true"></span><span>PostgreSQL</span></li>
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/mongodb.svg')" aria-hidden="true"></span><span>MongoDB</span></li>
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/amazonaws.svg')" aria-hidden="true"></span><span>AWS</span></li>
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/graphql.svg')" aria-hidden="true"></span><span>GraphQL</span></li>
+          </ul></div>
+          <div class="stack-cluster"><div class="stack-cluster-head"><span>04 /</span><h3 data-i18n="stackDelivery">Qualidade &amp; entrega</h3><small>BUILD / SHIP</small></div><ul class="stack-nodes">
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/playwright.svg')" aria-hidden="true"></span><span>Playwright</span></li>
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/vitest.svg')" aria-hidden="true"></span><span>Vitest</span></li>
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/cypress.svg')" aria-hidden="true"></span><span>Cypress</span></li>
+            <li class="tech-node"><span class="tech-mark" style="--icon:url('./tech-icons/githubactions.svg')" aria-hidden="true"></span><span>GitHub Actions</span></li>
+          </ul></div>
+        </div>
+        <p class="stack-board-note" data-i18n="stackNote">A ferramenta segue o problema. A arquitetura dá sentido ao conjunto.</p>
+      </div>
+    </section>
+
+    <section class="journey page-width section-pad" id="trajetoria" aria-labelledby="journey-title">
+      <div class="section-head" data-reveal><span class="section-number">04 / 06</span><span class="section-rule"></span><span data-i18n="sectionJourney">TRAJETÓRIA</span></div>
+      <div class="journey-grid">
+        <div class="journey-heading" data-reveal><p class="eyebrow" data-i18n="journeyEyebrow">EXPERIÊNCIA EM MOVIMENTO</p><h2 id="journey-title"><span data-i18n="journeyTitleA">Sistemas mudam.</span><br><em data-i18n="journeyTitleB">O olhar amadurece.</em></h2><p data-i18n="journeyIntro">Uma trajetória entre produtos, plataformas e equipes em diferentes contextos de negócio.</p><a class="text-action" href="./Iago-Rodrigues-Resume.pdf" target="_blank" rel="noopener"><span data-i18n="fullResume">Ver currículo completo</span><svg aria-hidden="true"><use href="#download-icon"></use></svg></a></div>
+        <div class="timeline">
+          <article class="timeline-item timeline-founder" data-reveal><span class="timeline-year" data-i18n="founderYears">ATUAL</span><div><h3><a href="#irtc">IRTC</a></h3><p class="timeline-role" data-i18n="founderRole">Fundador e Principal Engineer</p><p data-i18n="founderText">Fundação e direção técnica de uma empresa de engenharia de software, conectando arquitetura, cloud e IA a desafios de negócio.</p></div></article>
+          <article class="timeline-item" data-reveal><span class="timeline-year" data-i18n="leaflinkYears">2025 — ATUAL</span><div><h3>LeafLink</h3><p class="timeline-role" data-i18n="leaflinkRole">Lead Software Engineer</p><p data-i18n="leaflinkText">Liderança de iniciativas full stack, modernização de produtos e orientação técnica de uma equipe multidisciplinar.</p></div></article>
+          <article class="timeline-item" data-reveal><span class="timeline-year">2021 — 2024</span><div><h3>MeAjuda Dev</h3><p class="timeline-role" data-i18n="meajudaRole">Full Stack Engineer</p><p data-i18n="meajudaText">Desenvolvimento web e mobile, integração de serviços e mentoria em um produto de finanças pessoais.</p></div></article>
+          <article class="timeline-item" data-reveal><span class="timeline-year">2021 — 2023</span><div><h3>Dasa</h3><p class="timeline-role" data-i18n="dasaRole">Full Stack Engineer</p><p data-i18n="dasaText">Serviços de integração, arquitetura de dados e experiências digitais em saúde.</p></div></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="company section-pad" id="irtc" aria-labelledby="company-title">
+      <div class="page-width company-panel">
+        <div class="company-orbit orbit-a" aria-hidden="true"></div><div class="company-orbit orbit-b" aria-hidden="true"></div>
+        <div class="company-content" data-reveal><div class="section-head"><span class="section-number">05 / 06</span><span class="section-rule"></span><span data-i18n="sectionCompany">MINHA EMPRESA</span></div><p class="company-label">IRTC / CLOUD · SOFTWARE · AI</p><h2 id="company-title"><span data-i18n="companyTitleA">Engenharia com raízes</span><br><em data-i18n="companyTitleB">e alcance.</em></h2><p data-i18n="companyText">Sou fundador e Principal Engineer da IRTC. Com base em Belém, a empresa constrói e moderniza sistemas, integra operações e aplica cloud e IA a desafios reais de negócio.</p><a class="button button-company" href="https://irtc.com.br" target="_blank" rel="noopener noreferrer"><span data-i18n="visitCompany">Conhecer a IRTC</span><svg aria-hidden="true"><use href="#trace-icon"></use></svg></a></div>
+        <div class="company-stamp" aria-hidden="true"><span>IRTC</span><small>01°27′ S<br>48°30′ W</small></div>
+      </div>
+    </section>
+
+    <section class="contact page-width section-pad" id="contato" aria-labelledby="contact-title">
+      <div class="section-head" data-reveal><span class="section-number">06 / 06</span><span class="section-rule"></span><span data-i18n="sectionContact">PRÓXIMO PASSO</span></div>
+      <div class="contact-grid"><div data-reveal><p class="eyebrow" data-i18n="contactEyebrow">TEM UM DESAFIO EM MENTE?</p><h2 id="contact-title"><span data-i18n="contactTitleA">Vamos dar forma</span><br><em data-i18n="contactTitleB">ao próximo passo.</em></h2></div><div class="contact-side" data-reveal><p data-i18n="contactText">Gosto de conversar sobre sistemas, produtos e ideias que merecem sair do papel. Escolha um caminho e começamos por ali.</p><div class="contact-links"><a href="https://www.linkedin.com/in/iago-rodrigues/" target="_blank" rel="noopener noreferrer"><span>LinkedIn</span><svg aria-hidden="true"><use href="#trace-icon"></use></svg></a><a href="https://github.com/oiagorodrigues" target="_blank" rel="noopener noreferrer"><span>GitHub</span><svg aria-hidden="true"><use href="#trace-icon"></use></svg></a><a href="./Iago-Rodrigues-Resume.pdf" target="_blank" rel="noopener"><span data-i18n="resumeLink">Currículo / Resume</span><svg aria-hidden="true"><use href="#download-icon"></use></svg></a><a href="https://irtc.com.br" target="_blank" rel="noopener noreferrer"><span>IRTC</span><svg aria-hidden="true"><use href="#trace-icon"></use></svg></a></div></div></div>
+    </section>
+  </main>
+
+  <footer class="footer page-width"><a class="footer-brand" href="#inicio" aria-label="Voltar ao início" data-i18n-aria="backToTop"><svg aria-hidden="true"><use href="#ir-mark"></use></svg></a><span>© <span id="year">2026</span> Iago Rodrigues</span><span data-i18n="footerNote">Feito em Belém. Pensado para ir além.</span><a href="#inicio" data-i18n="backTop">VOLTAR AO TOPO</a></footer>
+  <script src="./script.js" defer></script>
+</body>
+</html>
