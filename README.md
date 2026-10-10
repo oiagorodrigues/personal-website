@@ -1,17 +1,28 @@
-# Iago Rodrigues — personal website
+# Iago Rodrigues
 
-A static personal website with Portuguese, English, and Spanish content, light/dark/system themes, professional experience, and an engineering technology atlas.
+**Lead Software Engineer · Founder and Principal Engineer at [IRTC](https://irtc.com.br) · Belém, Brazil**
 
-## Vercel
+> From complexity, I create clarity.
 
-Import this repository into Vercel. The included `vercel.json` selects the **Other** framework preset and serves the static site from the repository root. The project does not need a package manager or build step in its current form. Build and install commands are not disabled in the repository configuration.
+I'm a software engineer with more than eight years of experience across systems architecture, full-stack development, technical leadership, and product. I turn complex problems into reliable software, clear experiences, and technical decisions that hold up as businesses grow.
 
-The Vercel project should use this repository's root directory. After this pull request is merged, select `master` as the production branch if Vercel has not already selected it.
+Today, I lead engineering initiatives at **LeafLink** and set the technical direction at **IRTC**, the company I founded, based in Belém. At IRTC, we build and modernize systems using software, cloud, and AI. My experience also spans personal finance and healthcare products, working across services, interfaces, data, and teams.
 
-## Local preview
+## How I work
 
-Serve the repository root with any static HTTP server. No dependency installation is required.
+- **Architecture built to evolve:** services, APIs, and data designed for clarity, observability, and change.
+- **End-to-end product thinking:** front-end and back-end work connected to user experience and business goals.
+- **Thoughtful applied AI:** automation and agent workflows grounded in evaluation and verifiable outcomes.
+- **Leadership that multiplies impact:** technical direction, mentorship, and collaboration that help teams deliver with confidence.
 
-## Assets
+## Links
 
-The portrait, résumé PDF, favicon, and technology icons are included in the repository root. Most technology icons are from Simple Icons (CC0; see `tech-icons/LICENSE-simple-icons.md`). The AWS and Playwright symbols were drawn for this site.
+- [Personal website](https://iago-rodrigues.vercel.app/)
+- [LinkedIn](https://www.linkedin.com/in/iago-rodrigues/)
+- [GitHub](https://github.com/oiagorodrigues)
+- [IRTC](https://irtc.com.br)
+- [Résumé (PDF)](./Iago-Rodrigues-Resume.pdf)
+
+## About this site
+
+This repository contains my portfolio, career story, and the technologies I work with. The site is available in Portuguese, English, and Spanish, with light, dark, and system themes. Its visual identity starts with the `<IR/>` mark and reflects an approach to engineering that pairs technical precision with care for people.
