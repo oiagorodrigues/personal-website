@@ -1,28 +1,28 @@
 # Iago Rodrigues
 
-**Lead Software Engineer · Fundador e Principal Engineer da [IRTC](https://irtc.com.br) · Belém, Brasil**
+**Lead Software Engineer · Founder and Principal Engineer at [IRTC](https://irtc.com.br) · Belém, Brazil**
 
-> Da complexidade, construo clareza.
+> From complexity, I create clarity.
 
-Sou engenheiro de software há mais de oito anos. Trabalho na interseção entre arquitetura de sistemas, desenvolvimento full stack, liderança técnica e produto. Gosto de transformar problemas complexos em software confiável, experiências claras e decisões que continuam fazendo sentido à medida que o negócio cresce.
+I'm a software engineer with more than eight years of experience across systems architecture, full-stack development, technical leadership, and product. I turn complex problems into reliable software, clear experiences, and technical decisions that hold up as businesses grow.
 
-Atualmente, lidero iniciativas de engenharia na **LeafLink** e a direção técnica da **IRTC**, empresa que fundei e que tem sede em Belém. Na IRTC, construímos e modernizamos sistemas com software, cloud e IA. Minha trajetória também passa por produtos de finanças pessoais e saúde, com atuação em serviços, interfaces, dados e colaboração entre equipes.
+Today, I lead engineering initiatives at **LeafLink** and set the technical direction at **IRTC**, the company I founded, based in Belém. At IRTC, we build and modernize systems using software, cloud, and AI. My experience also spans personal finance and healthcare products, working across services, interfaces, data, and teams.
 
-## Como trabalho
+## How I work
 
-- **Arquitetura com espaço para evoluir:** serviços, APIs e dados pensados para clareza, observabilidade e mudança.
-- **Produto de ponta a ponta:** front-end e back-end conectados à experiência de quem usa e aos objetivos do negócio.
-- **IA aplicada com critério:** automação e fluxos com agentes apoiados por avaliação e resultados verificáveis.
-- **Liderança que multiplica:** direção técnica, mentoria e colaboração para que equipes entreguem com confiança.
+- **Architecture built to evolve:** services, APIs, and data designed for clarity, observability, and change.
+- **End-to-end product thinking:** front-end and back-end work connected to user experience and business goals.
+- **Thoughtful applied AI:** automation and agent workflows grounded in evaluation and verifiable outcomes.
+- **Leadership that multiplies impact:** technical direction, mentorship, and collaboration that help teams deliver with confidence.
 
 ## Links
 
-- [Site pessoal](https://iago-rodrigues.vercel.app/)
+- [Personal website](https://iago-rodrigues.vercel.app/)
 - [LinkedIn](https://www.linkedin.com/in/iago-rodrigues/)
 - [GitHub](https://github.com/oiagorodrigues)
 - [IRTC](https://irtc.com.br)
-- [Currículo em PDF](./Iago-Rodrigues-Resume.pdf)
+- [Résumé (PDF)](./Iago-Rodrigues-Resume.pdf)
 
-## Sobre este site
+## About this site
 
-Este repositório reúne meu portfólio, minha trajetória e as tecnologias com que trabalho. O site está disponível em português, inglês e espanhol, com temas claro, escuro e automático. A identidade visual parte da marca `<IR/>` e de uma visão de engenharia que combina precisão técnica com atenção às pessoas.
+This repository contains my portfolio, career story, and the technologies I work with. The site is available in Portuguese, English, and Spanish, with light, dark, and system themes. Its visual identity starts with the `<IR/>` mark and reflects an approach to engineering that pairs technical precision with care for people.
