@@ -1,17 +1,28 @@
-# Iago Rodrigues — personal website
+# Iago Rodrigues
 
-A static personal website with Portuguese, English, and Spanish content, light/dark/system themes, professional experience, and an engineering technology atlas.
+**Lead Software Engineer · Fundador e Principal Engineer da [IRTC](https://irtc.com.br) · Belém, Brasil**
 
-## Vercel
+> Da complexidade, construo clareza.
 
-Import this repository into Vercel. The included `vercel.json` selects the **Other** framework preset and serves the static site from the repository root. The project does not need a package manager or build step in its current form. Build and install commands are not disabled in the repository configuration.
+Sou engenheiro de software há mais de oito anos. Trabalho na interseção entre arquitetura de sistemas, desenvolvimento full stack, liderança técnica e produto. Gosto de transformar problemas complexos em software confiável, experiências claras e decisões que continuam fazendo sentido à medida que o negócio cresce.
 
-The Vercel project should use this repository's root directory. After this pull request is merged, select `master` as the production branch if Vercel has not already selected it.
+Atualmente, lidero iniciativas de engenharia na **LeafLink** e a direção técnica da **IRTC**, empresa que fundei e que tem sede em Belém. Na IRTC, construímos e modernizamos sistemas com software, cloud e IA. Minha trajetória também passa por produtos de finanças pessoais e saúde, com atuação em serviços, interfaces, dados e colaboração entre equipes.
 
-## Local preview
+## Como trabalho
 
-Serve the repository root with any static HTTP server. No dependency installation is required.
+- **Arquitetura com espaço para evoluir:** serviços, APIs e dados pensados para clareza, observabilidade e mudança.
+- **Produto de ponta a ponta:** front-end e back-end conectados à experiência de quem usa e aos objetivos do negócio.
+- **IA aplicada com critério:** automação e fluxos com agentes apoiados por avaliação e resultados verificáveis.
+- **Liderança que multiplica:** direção técnica, mentoria e colaboração para que equipes entreguem com confiança.
 
-## Assets
+## Links
 
-The portrait, résumé PDF, favicon, and technology icons are included in the repository root. Most technology icons are from Simple Icons (CC0; see `tech-icons/LICENSE-simple-icons.md`). The AWS and Playwright symbols were drawn for this site.
+- [Site pessoal](https://iago-rodrigues.vercel.app/)
+- [LinkedIn](https://www.linkedin.com/in/iago-rodrigues/)
+- [GitHub](https://github.com/oiagorodrigues)
+- [IRTC](https://irtc.com.br)
+- [Currículo em PDF](./Iago-Rodrigues-Resume.pdf)
+
+## Sobre este site
+
+Este repositório reúne meu portfólio, minha trajetória e as tecnologias com que trabalho. O site está disponível em português, inglês e espanhol, com temas claro, escuro e automático. A identidade visual parte da marca `<IR/>` e de uma visão de engenharia que combina precisão técnica com atenção às pessoas.
